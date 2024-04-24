@@ -1,22 +1,17 @@
-from flask import Flask
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Feedback Form</h1>
+    <form method="post" action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="feedback">Feedback:</label><br>
+        <textarea name="feedback" id="feedback"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
 
-app = Flask(Feedback)
 
-@app.route('/')
-def blank_page():
-    return """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blank Page</title>
-    </head>
-    <body>
-
-    </body>
-    </html>
-    """
-
-if __name__ == '__main__':
-    app.run(debug=True)
