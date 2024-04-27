@@ -52,34 +52,39 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 <center>
 <head>
 	<title>MMU Clubhub Connect</title>
-
-	<div style="background-color: aquamarine; width: 1000px; height: 600px;">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="page.css">
 </head>
-<body>
-
-
-
-	<h1>Login For Free Cookie</h1>
+<body> 
+	<div class="yi">	
+	<h1><b> Login </b></h1>
+	
 	<br>
-	<div style="background-color: aquamarine; width: 700px; height: 400px;">
-		<br><br>
-
-
 		<form action="#" method="POST">
 
 	<div>
-		<h3><label>Username</label></h3>
+		<div class="input-box">
+		<h3> Username :<h3>
 		<input type="text" name="username" required>
+		<i class='bx bxs-user'></i>
+		</div>
 	</div>
+
     <br>
+
     <div>
-		<h3><label>Password</label></h3>
+		<div class="input-bos">
+		<h3> Password :<h3>
 		<input type="password" name="password" required>
+		<i class='bx bx-lock'></i>
+		</div>
 	</div>
+
 	<br><br>
 
 	<div>
 		
-		<input type="submit" value="Login">
+		<button type="submit" class="btn">Login</button>
+	</div>
 	</div>
 </html>
