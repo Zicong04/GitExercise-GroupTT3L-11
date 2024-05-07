@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MMU Clubhub Connect</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+            text-align: center; /* Center main content */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .header2 {
+            font-family: 'Times New Roman';
+            background-color: #555555;
+            color: #ddd;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+        h1 {
+            margin: 5px auto;
+            text-align: center;
+            color: white;
+            font-size: 1em;
+            transition: 0.5s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1:hover {
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 2px 0 #ccc, 0 2px 0 #ccc,
+                0 2px 0 #ccc, 0 2px 0 #ccc,
+                0 2px 0 #ccc, 0 2px 0 #ccc,
+                0 2px 0 #ccc, 0 2px 0 #ccc,
+                0 5px 0 #ccc, 0 5px 0 #ccc,
+                0 20px 20px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            margin: 5px auto;
+            text-align: center;
+            color: black;
+            font-size: 1em;
+            transition: 0.5s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2:hover {
+            text-shadow: 0 1px 0 black, 0 2px 0 black,
+                0 2px 0 black, 0 2px 0 black,
+                0 2px 0 black, 0 2px 0 black,
+                0 2px 0 black, 0 2px 0 black,
+                0 2px 0 black, 0 2px 0 black,
+                0 5px 0 black, 0 5px 0 black,
+                0 20px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1500px; 
+            height: 200px; 
+        }
+
+        .image-wrapper {
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding: 0px 0;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>MMU Clubhub Connect</h1>
+</header>
+<nav>
+    <a href="home.html">Home</a>
+    <a href="Feeback.html">Feedback</a>
+    <a href="example.html">Announcement</a>
+    <a href="example.html">Club categories</a>
+    <a href="example.html">membership</a>
+</nav>
+<body>
+<head>
+    <title>change picture</title>
+    <script type="text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "image1.jpg";
+        images[1] = "image2.jpg";
+        images[2] = "image3.jpg";
+    </script>
+</head>
+
+<body onload="startTimer()">
+<div class="image-wrapper">
+    <img id="img" class="center" src="startpicture.jpg"/>
+    <center><button type="button" onclick="displayPreviousImage()">Previous</button></center>
+    <center><button type="button" onclick="displayNextImage()">Next</button></center>
+</div>
+</body>
+<div class="header2">
+    <marquee>"Welcome to Clubhub, your ultimate platform for club management and engagement! Designed to streamline club operations and enhance member experiences, Clubhub offers a centralized hub for clubs, societies, and organizations. From event management to membership tracking, 
+        communication tools, and resource sharing, Clubhub empowers clubs to thrive and members to connect. Join us in fostering a vibrant club community and enriching your club experience!"
+    </marquee>
+</div>
+<main>
+    <h2><marquee>Welcome to MMU Clubhub Connect</marquee></h2>
+    <div class="title">
+        <h1><img src="booking icon.png" style="margin-left: 20px;" width="50" height="50"/></h1>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 MMU Clubhub Connect. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
