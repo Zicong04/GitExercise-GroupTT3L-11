@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Winners</title>
+<style>
+    /* CSS for styling */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 5px;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>Update Winners</h1>
+    <div class="form-group">
+        <label for="winner-name">Winner Name:</label>
+        <input type="text" id="winner-name">
+    </div>
+    <div class="form-group">
+        <label for="prize">Prize:</label>
+        <input type="text" id="prize">
+    </div>
+    <button onclick="updateWinner()">Update Winner</button>
+
+    <script>
+        function updateWinner() {
+            // Get the values from the input fields
+            var winnerName = document.getElementById('winner-name').value;
+            var prize = document.getElementById('prize').value;
+
+            // Update the winner information (this is a simplified example)
+            alert('Winner updated: ' + winnerName + ' - ' + prize);
+        }
+    </script>
+</body>
+</html>
