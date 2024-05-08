@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Box</title>
+<style>
+    /* Style for the item */
+    .item {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    /* Style for the detail box */
+    .detail {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 1;
+        top: 100%; /* Position the detail box below the item */
+        left: 0;
+        width: 100%;
+    }
+
+    /* Show the detail box on hover */
+    .item:hover .detail {
+        display: block;
+    }
+
+    /* Style for the navigation links */
+    nav {
+        margin-bottom: 100px;
+    }
+
+    nav a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+    <nav><div>
+        <div class="item">  <a href="home.html">Home</a>     
+        <div class="detail"> Detail box for Item 1</div>
+        </div>
+        <div class="item"><a href="Feeback.html">Feedback</a>
+        <div class="detail"> Detail box for Item 1</div>
+        </div>
+        <div class="item"><a href="example.html">Announcement</a>
+        <div class="detail"> Detail box for Item 1</div>
+        </div>
+        <div class="item"><a href="example.html">Club categories</a>
+        <div class="detail"> Detail box for Item 1</div>
+        </div>
+        <div class="item"><a href="example.html">Membership</a>
+        <div class="detail"> Detail box for Item 1</div>
+        </div>
+    </nav>
+
+    <div class="item">
+        Item 1
+        <div class="detail">
+            Detail box for Item 1
+        </div>
+    </div>
+    <div class="item">
+        Item 2
+        <div class="detail">
+            Detail box for Item 2
+        </div>
+    </div>
+    <div class="item">
+        Item 3
+        <div class="detail">
+            Detail box for Item 3
+        </div>
+    </div>
+</body>
+</html>
