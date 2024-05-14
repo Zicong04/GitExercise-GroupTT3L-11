@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $stmt->execute();
 
-            header("Location: http://localhost/qr-code-attendance-system/index.php");
+            header("Location: http://localhost:3000/page/attendance/index.php");
 
             exit();
         } catch (PDOException $e) {

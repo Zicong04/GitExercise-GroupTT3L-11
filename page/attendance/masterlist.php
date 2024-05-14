@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Attendance System</title>
+    <title>QR Code Attendance</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -36,8 +36,8 @@
         }
 
         .student-container {
-            height: 90%;
-            width: 90%;
+            height: 100%;
+            width: 95%;
             border-radius: 20px;
             padding: 40px;
             background-color: rgba(255, 255, 255, 0.8);
@@ -79,7 +79,6 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Logout</a>
                 </li>
             </ul>
         </div>

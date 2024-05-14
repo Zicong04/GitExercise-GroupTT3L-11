@@ -43,21 +43,21 @@ if(!isset($_SESSION["username"]))
         }
 
         .attendance-container {
-            height: 90%;
+            display: flex;
+            height: 100%;
             width: 90%;
             border-radius: 20px;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
         }
 
         .attendance-container > div {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
         }
 
         .attendance-container > div:last-child {
-            width: 64%;
+            width: 60%;
             margin-left: auto;
         }
     </style>
@@ -80,7 +80,6 @@ if(!isset($_SESSION["username"]))
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Logout</a>
                 </li>
             </ul>
         </div>
