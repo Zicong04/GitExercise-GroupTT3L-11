@@ -1,9 +1,0 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('bgphoto.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
