@@ -346,7 +346,6 @@ if(!isset($_SESSION["username"]))
         <div>
             <div class="item">  <a href="ahome.php">Home</a>     
             <div class="detail"> <div class="fonts"><ul>
-                <li>Manage Programs</li>
                 <li>Daily check in</li>
                 <li>Update Attendance</li>
             </ul></div>
@@ -366,15 +365,16 @@ if(!isset($_SESSION["username"]))
 
             </ul></div></div>
             </div>
-            <div class="item"><a href="clubcategory.php">Club categories</a>
+            <div class="item"><a href="./club/indexi.php">Club categories</a>
             <div class="detail"><div class="fonts"><ul>
-                <li>Club1</li>
-                <li>Club2</li>
-                <li>Club3</li>
-                <li>Club4</li>
+                <li>Sports</li>
+                <li>Academic</li>
+                <li>Arts</li>
+                <li>Technology</li>
+
             </ul></div></div>
             </div>
-            <div class="item"><a href="./memberships/index.php">Membership</a>
+            <div class="item"><a href="./student membership/index.php">Membership</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Membership</li>
             </ul></div></div>
