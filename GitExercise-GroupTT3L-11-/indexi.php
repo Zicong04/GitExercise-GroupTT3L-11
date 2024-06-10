@@ -6,7 +6,7 @@
         .logout {
             position:absolute;
             top: 30px;
-            right:5px;
+            right:15px;
             background-color: #FFF2F4;
             color: black;
             padding: 10px 20px;
@@ -60,7 +60,7 @@
                             </thead>
                             <tbody>
                                 <?php 
-                                    $query = "SELECT * FROM students";
+                                    $query = "SELECT * FROM student";
                                     $query_run = mysqli_query($con, $query);
 
                                     if(mysqli_num_rows($query_run) > 0)
