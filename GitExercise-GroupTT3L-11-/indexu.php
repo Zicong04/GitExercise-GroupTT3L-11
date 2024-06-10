@@ -58,7 +58,7 @@
                             </thead>
                             <tbody>
                                 <?php 
-                                    $query = "SELECT * FROM students";
+                                    $query = "SELECT * FROM student";
                                     $query_run = mysqli_query($con, $query);
 
                                     if(mysqli_num_rows($query_run) > 0)
@@ -91,8 +91,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
