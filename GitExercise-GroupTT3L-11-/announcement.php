@@ -19,7 +19,7 @@ if(!isset($_SESSION["username"]))
             height: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url('aa.jpg');
+            background-image: url('bg.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -117,9 +117,8 @@ if(!isset($_SESSION["username"]))
     </header>
     <nav>
         <ul>
-            <li><a href="clubdetails.php">Clubdetails</a></li>
-            <li><a href="#announcement2">Upcoming Events</a></li>
-            <li><a href="#announcement3">Changes or Updates</a></li>
+            <li><a href="./announcement/indexi.php">Announcement</a></li>
+            <li><a href="update.php">Changes Or Updates</a></li>
             <li><a href="indexi.php">Winner Update</a></li>
         </ul>
     </nav>
@@ -129,19 +128,19 @@ if(!isset($_SESSION["username"]))
     </div>
         <div class="announcement-container">
             <div class="announcement" id="announcement1">
-                <h2>Announcement Title 1</h2>
+                <h2>Announcement </h2>
                 <p><strong>Date:</strong> January 1, 2024</p>
                 <p>This is the first announcement. Here you can provide detailed information about the announcement, including any important dates, details, and relevant links.</p>
             </div>
 
             <div class="announcement" id="announcement2">
-                <h2>Announcement Title 2</h2>
+                <h2>Announcement </h2>
                 <p><strong>Date:</strong> February 1, 2024</p>
                 <p>This is the second announcement. Here you can provide detailed information about the announcement, including any important dates, details, and relevant links.</p>
             </div>
 
             <div class="announcement" id="announcement3">
-                <h2>Announcement Title 3</h2>
+                <h2>Announcement </h2>
                 <p><strong>Date:</strong> March 1, 2024</p>
                 <p>This is the third announcement. Here you can provide detailed information about the announcement, including any important dates, details, and relevant links.</p>
             </div>
