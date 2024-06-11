@@ -1,13 +1,9 @@
 <?php
 session_start();
 if(!isset($_SESSION["username"]))
-{
-	header("location:index.php");
-}
+
 
 ?>
-<?php echo $_SESSION["username"] ?>
-
 <!DOCTYPE html>
 <head>
     <title>MMU Clubhub Connect</title>
@@ -326,12 +322,16 @@ if(!isset($_SESSION["username"]))
                 <div class="wordopenprofile">
                 <p>Name: User</p>
                 <p><a href="Dailysystem.php">Daily Point:</a></p>
+                <a href="./student_db/index.php">details</a></p>
+                <header>
+
+        <button id="openBtn" class="button"><div class="item"><a href="http://localhost:3000/GitExercise-GroupTT3L-11-/login/profile.php">Profile</a></button>
+
+</header>
                 <div class="log">
-                <a href="index.php" target="_blank">Logout</a>
+                <a href="./login/index.php" target="_blank">Logout</a>
                 </div>
-                <div class="log">
-                <p><a href="">Profile</a></p>
-                </div>
+
                 </div>
             </div>
         </div>
@@ -351,14 +351,12 @@ if(!isset($_SESSION["username"]))
         <div>
             <div class="item">  <a href="uhome.php">Home</a>     
             <div class="detail"> <div class="fonts"><ul>
-                <li>Manage Programs</li>
                 <li>Daily check in</li>
-                <li>Award Points</li>
                 <li>Update Attendance</li>
             </ul></div>
         </div>
             </div>
-            <div class="item"><a href="./feedback/index.html">Feedback</a>
+            <div class="item"><a href="./feedback/index.php">Feedback</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Feedback Form</li>
             </ul></div></div>
@@ -372,7 +370,7 @@ if(!isset($_SESSION["username"]))
 
             </ul></div></div>
             </div>
-            <div class="item"><a href="clubcategory.php">Club categories</a>
+            <div class="item"><a href="./club/indexu.php">Club categories</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Sports</li>
                 <li>Academic</li>
@@ -441,7 +439,7 @@ if(!isset($_SESSION["username"]))
             <div class="hero-text">
               <h1 style="font-size:50px">Clubhub</h1>
               <p>(details)</p>
-              <button>CLICK ME!</button>
+              <button><a href="introduction.php">CLICK ME!</a></button>
             </div>
           </div>
         </div>
@@ -457,7 +455,7 @@ if(!isset($_SESSION["username"]))
             image.style.left = '0'; // Slide image out
           } else {
             // Scrolling up
-            image.style.left = '-1300px'; // Slide image back in
+            image.style.left = '100px'; // Slide image back in
           }
           lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
         });

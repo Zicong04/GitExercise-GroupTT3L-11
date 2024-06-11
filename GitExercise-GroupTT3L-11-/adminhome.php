@@ -325,6 +325,8 @@ if(!isset($_SESSION["username"]))
                 <div class="wordopenprofile">
                 <p>Name: Admin</p>
                 <div class="log">
+                <a href="./users_db/index.php" target="_blank">Students Detail</a>
+                <br>
                 <a href="index.php" target="_blank">Logout</a>
                 </div>
                 </div>
@@ -351,7 +353,7 @@ if(!isset($_SESSION["username"]))
             </ul></div>
         </div>
             </div>
-            <div class="item"><a href="./feedback/index.html">Feedback</a>
+            <div class="item"><a href="./feedback/index.php">Feedback</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Feedback Form</li>
             </ul></div></div>
@@ -374,7 +376,7 @@ if(!isset($_SESSION["username"]))
 
             </ul></div></div>
             </div>
-            <div class="item"><a href="./student membership/index.php">Membership</a>
+            <div class="item"><a href="./membership/index.php">Membership</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Membership</li>
             </ul></div></div>
