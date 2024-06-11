@@ -13,8 +13,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Student Information</title>
+
+    <style>
+                .logout {
+            position:absolute;
+            top: 30px;
+            right:5px;
+            background-color: #FFF2F4;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+</style>
 </head>
 <body>
+<div class="logout">
+        <a href="http://localhost:3000/GitExercise-GroupTT3L-11-/userhome.php">Back</a>
+    </div>
+
   
     <div class="container mt-4">
 

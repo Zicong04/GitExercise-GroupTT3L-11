@@ -1,0 +1,44 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.btn {
+    padding: 5px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px 25px;
+    color: white;
+    background-color: rgb(255, 75, 111);
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(255, 56, 96);
+}
+
+input[type="text"], input[type="email"]{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 80%;
+    height: 100px;
+}
+
+label {
+    float: left;
+    position: relative;
+    left: 9.5%;
+}
+
+fieldset {
+    background-image: linear-gradient(to bottom left, rgb(216, 255, 116), rgb(132, 210, 255), rgb(219, 165, 255));
+}
