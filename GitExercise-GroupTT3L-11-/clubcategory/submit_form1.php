@@ -1,18 +1,25 @@
+<a?php
+session_start();
+if(!isset($_SESSION["username"]))
+{
+	header("location:index.php");
+}
+
+?>
+
 <?php
 session_start();
 if (!isset($_SESSION["username"])) {
-    header("location:index.php");
-    exit();
+
 }
 
 include 'db_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $conn->real_escape_string($_POST['name']);
-    $email = $conn->real_escape_string($_POST['email']);
     $club = $conn->real_escape_string($_POST['club']);
 
-    $sql = "INSERT INTO registrations (name, email, club) VALUES ('$name', '$email', '$club')";
+    $sql = "INSERT INTO registrations (name, club) VALUES ('$name','$club')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
@@ -40,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <section id="home">
             <h2>Registration Successful</h2>
             <h2>Thank you for joining the club!</h2>
-            <center><button><h2><a href="clubcategory.php" class="back">Back to Club Categories</a></h2></button></center>
+            <center><button><h2><a href="exploreclub.php" class="back">Back to Club Categories</a></h2></button></center>
         </section>
     </main>
     <footer>

@@ -25,8 +25,7 @@ if(!isset($_SESSION["username"]))
                     <span class="closeBtn">&times;</span>
                 </div>
                 <div class="wordopenprofile">
-                <p> <a href="clubcategory.php">Previous</a></p>
-                <p> <a href="http://localhost:3000/GitExercise-GroupTT3L-11/GitExercise-GroupTT3L-11/page/zmainpage/userhome.php">Home</a></p>
+                <p> <a href="http://localhost:3000/GitExercise-GroupTT3L-11-/userhome.php">Home</a></p>
                 </div>
                 </div>
             </div>
@@ -93,9 +92,6 @@ if(!isset($_SESSION["username"]))
             <form action="submit_form1.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
                 <br>
                 <label for="club">Select Club:</label>
                 <select id="club" name="club">
