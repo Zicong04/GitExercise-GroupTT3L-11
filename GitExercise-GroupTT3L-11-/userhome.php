@@ -1,9 +1,12 @@
-<?php
+<a?php
 session_start();
 if(!isset($_SESSION["username"]))
-
+{
+	header("location:index.php");
+}
 
 ?>
+
 <!DOCTYPE html>
 <head>
     <title>MMU Clubhub Connect</title>
@@ -320,7 +323,6 @@ if(!isset($_SESSION["username"]))
                     <span class="closeBtn">&times;</span>
                 </div>
                 <div class="wordopenprofile">
-                <p>Name: User</p>
                 <p><a href="Dailysystem.php">Daily Point:</a></p>
                 <a href="./student_db/index.php">details</a></p>
                 <header>
@@ -381,6 +383,11 @@ if(!isset($_SESSION["username"]))
             <div class="item"><a href="./membership/index.php">Membership</a>
             <div class="detail"><div class="fonts"><ul>
                 <li>Membership</li>
+            </ul></div></div>
+            </div>
+            <div class="item"><a href="./clubcategory/exploreclub.php">Club Sign Up</a>
+            <div class="detail"><div class="fonts"><ul>
+                <li>Club join</li>
             </ul></div></div>
             </div>
     </nav>
