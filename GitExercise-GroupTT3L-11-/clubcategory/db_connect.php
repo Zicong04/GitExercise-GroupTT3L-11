@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost"; // Change if needed
-$username = "root"; // Change if needed
-$password = ""; // Change if needed
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
 $dbname = "club_program";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

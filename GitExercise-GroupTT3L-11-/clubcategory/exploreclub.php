@@ -97,11 +97,11 @@ if(!isset($_SESSION["username"]))
                 <select id="club" name="club">
                     <option value="photography">Photography Club</option>
                     <option value="robotics">Robotics Club</option>
-                    <option value="robotics">Soccer Club</option>
-                    <option value="robotics">Basketball Club</option>
-                    <option value="robotics">Math Club</option>
-                    <option value="robotics">Drama Club</option>
-                    <option value="robotics">Programming Club</option>
+                    <option value="Soccer Club">Soccer Club</option>
+                    <option value="Basketball Club">Basketball Club</option>
+                    <option value="Math Club">Math Club</option>
+                    <option value="Drama Club">Drama Club</option>
+                    <option value="Programming Club">Programming Club</option>
 
                     <!-- Add more clubs as needed -->
                 </select>
