@@ -1,2 +1,2 @@
-This is Our website :
+This is our website :
   mmuclubhubconnect.website  
